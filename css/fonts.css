@@ -1,0 +1,44 @@
+@font-face {
+    src: url("/fonts/Gilroy-Light.otf") format('opentype');;
+    font-family: Gilroy-300;
+    font-style: normal;
+}
+@font-face {
+    src: url("/fonts/Gilroy-Regular.otf") format('opentype');;
+    font-family: Gilroy-400;
+    font-style: normal;
+}
+
+@font-face {
+    src: url("/fonts/Gilroy-Medium.otf") format('opentype');;
+    font-family: Gilroy-500;
+    font-style: normal;
+}
+
+@font-face {
+    src: url("/fonts/Gilroy-Semibold.otf") format('opentype');;
+    font-family: Gilroy-600;
+    font-style: normal;
+}
+
+@font-face {
+    src: url("/fonts/Gilroy-Bold.otf") format('opentype');;
+    font-family: Gilroy-700;
+    font-style: normal;
+}
+
+@font-face {
+    src: url("/fonts/Gilroy-ExtraBold.otf") format('opentype');;
+    font-family: Gilroy-800;
+    font-style: normal;
+}
+
+@font-face {
+    src: url("/fonts/Gilroy-Black.otf") format('opentype');;
+    font-family: Gilroy-900;
+    font-style: normal;
+}
+
+
+
+

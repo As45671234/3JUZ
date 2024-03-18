@@ -1,0 +1,157 @@
+
+.task-file-uploaded {
+    margin-bottom: 10px;
+    padding: 0 10px;
+
+    background: #F5F5F5;
+    border-radius: 6px;
+    display: none;
+}
+
+.task-file-uploaded .file {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-file-uploaded .file span {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Gilroy-600;
+    font-size: 13px;
+    line-height: 130%;
+    color: #09778E;
+    margin-right: 5px;
+}
+
+.task-file-uploaded .file span.right {
+    width: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    height: 40px;
+    background: #FFE9E9;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+}
+
+.task-file-uploaded .file span.right svg {
+    margin-left: 5px;
+}
+
+.task-file-uploaded .file span.right svg {
+    cursor: pointer;
+}
+
+
+.sidebar-mobile-items {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .sidebar-item {
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .auth-btn {
+        font-size: 16px;
+    }
+
+    .logo-link img {
+        width: 70%;
+    }
+
+    .content-title {
+        font-size: 22px;
+    }
+
+    .col-md-hidden {
+        display: none;
+    }
+
+    .sidebar-mobile-items {
+        display: block;
+        min-width: 100%;
+        padding: 20px 0;
+    }
+
+    .sidebar-mobile-items .sidebar-item {
+        justify-content: center;
+        color: #fff;
+    }
+
+    .sidebar-mobile-items .sidebar-item svg path {
+        fill: #fff;
+    }
+
+    .auth-mobile-buttons {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabs h6 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .content-title {
+        font-size: 20px;
+    }
+
+    fieldset {
+        padding: 15px 25px 25px;
+    }
+
+    .modal-close {
+        position: absolute;
+        right: 0px;
+        top: -40px;
+    }
+
+    .copyright {
+        font-size: 15px;
+    }
+
+    .course-card {
+        padding: 5px;
+    }
+
+    .card-default-text {
+        font-size: 16px;
+    }
+
+    .sidebar-items.sidebar-mobile-items .sidebar-item {
+        font-size: 15px;
+    }
+
+    .lesson-card {
+        padding: 0;
+    }
+
+    .content-title {
+        font-size: 18px;
+    }
+
+    .btn-lesson {
+        width: 100%;
+    }
+
+    .cabinet-card {
+        padding: 0;
+    }
+
+    .cabinet-center {
+        justify-content: center;
+    }
+
+    .margin-bottom-mobile {
+        margin-bottom: 0;
+    }
+}

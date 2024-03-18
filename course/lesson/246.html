@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Simplifying exponents using fractions</title>
+
+    <!-- Csrf token -->
+    <meta name="csrf-token" content="YH0LVPDPUQcOLMffOmr3IRGDHZSuLxYyw9IpFj1S">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../../css/fonts.css?v=1"/>
+
+    <!-- Styles -->
+        <style>
+        .plyr--video {
+            background: #000;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .plyr__control--overlaid {
+            background: rgba(255, 255, 255, 0.4);
+            padding: 30px;
+        }
+
+        .plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {
+            background: rgba(255, 255, 255, 0.4);
+            color: #fff;
+        }
+
+        .plyr__control.plyr__tab-focus {
+            box-shadow: none;
+            outline: 0;
+        }
+
+        .plyr--video {
+            border-radius: 6px !important;
+        }
+
+        .plyr__video-wrapper.plyr__video-embed {
+            height: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/normalize.css"/>
+    <link rel="stylesheet" href="../../css/loader.css">
+    <link rel="stylesheet" href="../../plugins/sweetalert2/sweetalert2.css">
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/question.css"/>
+    <link rel="stylesheet" href="../../css/media.css"/>
+
+    <link rel="stylesheet" href="../../admin-assets/vendors/plyr/plyr.css"/>
+</head>
+<body class="wrap d-flex flex-column min-vh-100">
+<div class="overflow"></div>
+
+<div class="loader">
+    <div tabindex="0" aria-label="Loading" class="overlay is-active is-full-page" aria-busy="true">
+    <div class="vld-background"></div>
+    <div class="vld-icon">
+
+        <svg viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" width="64" height="64" stroke="#fff">
+            <g fill="none" fill-rule="evenodd">
+                <g transform="translate(1 1)" stroke-width="2">
+                    <circle stroke-opacity=".25" cx="18" cy="18" r="18"></circle>
+                    <path d="M36 18c0-9.94-8.06-18-18-18">
+                        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18"
+                                          dur="0.8s" repeatCount="indefinite"></animateTransform>
+                    </path>
+                </g>
+            </g>
+        </svg>
+    </div>
+</div>
+</div>
+
+<div class="flex-fill">
+    <header class="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-header">
+            <a class="navbar-brand logo-link" href="../../index.html">
+                <img src="../../images/7.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <div class="sidebar-items sidebar-mobile-items">
+                                                                                                                                <a href="https://nomads-academy.kz"
+                               class="sidebar-item ">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.9375 4.125H11.6875L8.9375 1.375H2.0625C0.923828 1.375 0 2.29883 0 3.4375V18.5625C0 19.7012 0.923828 20.625 2.0625 20.625H19.9375C21.0762 20.625 22 19.7012 22 18.5625V6.1875C22 5.04883 21.0762 4.125 19.9375 4.125Z"
+                                        fill="black"/>
+                                    <path d="M7.99966 12.182H14.3636" stroke="white" stroke-width="1.4"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                All course
+                            </a>
+                                                                            <a href="../../questions"
+                               class="sidebar-item ">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.61232 2.83962C17.6165 -0.764545 26.5009 8.79535 21.6628 17.5042C19.4649 21.4594 14.0055 24.6448 7.64825 21.6323L3.22898 22.8948C2.54357 23.0907 1.90971 22.4594 2.10242 21.7735C2.36596 20.8329 2.99096 18.6151 3.35659 17.4131C0.615962 12.5235 2.46388 5.30004 8.6118 2.83962H8.61232ZM8.33107 10.5474C8.33107 10.9068 8.62273 11.1985 8.98211 11.1985H16.0154C16.1881 11.1985 16.3537 11.1299 16.4758 11.0078C16.5979 10.8857 16.6665 10.7201 16.6665 10.5474C16.6665 10.3748 16.5979 10.2092 16.4758 10.0871C16.3537 9.96498 16.1881 9.89639 16.0154 9.89639H8.98211C8.62273 9.89639 8.33107 10.1881 8.33107 10.5474ZM8.98419 13.7891C8.81152 13.7891 8.64593 13.8577 8.52384 13.9798C8.40174 14.1019 8.33315 14.2675 8.33315 14.4401C8.33315 14.6128 8.40174 14.7784 8.52384 14.9005C8.64593 15.0226 8.81152 15.0912 8.98419 15.0912H13.9321C14.1048 15.0912 14.2704 15.0226 14.3925 14.9005C14.5146 14.7784 14.5831 14.6128 14.5831 14.4401C14.5831 14.2675 14.5146 14.1019 14.3925 13.9798C14.2704 13.8577 14.1048 13.7891 13.9321 13.7891H8.98419Z"
+                                        fill="black"/>
+                                </svg>
+                                Question
+                            </a>
+                                                                            <a href="../../contract"
+                               class="sidebar-item ">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.5005 3.07914C20.461 2.79549 20.2569 2.56216 19.981 2.48547L11.1388 0.0264587C11.0128 -0.00862628 10.8796 -0.00862628 10.7535 0.0264587L1.9113 2.48547C1.63542 2.56216 1.43133 2.79539 1.39184 3.07914C1.34055 3.44791 0.170572 12.1613 3.17149 16.4959C6.16886 20.8253 10.5906 21.9348 10.7774 21.98C10.8329 21.9934 10.8894 22 10.9462 22C11.0029 22 11.0595 21.9933 11.115 21.98C11.3018 21.9348 15.7236 20.8253 18.7208 16.4959C21.7218 12.1614 20.5518 3.44801 20.5005 3.07914Z"
+                                        fill="black"/>
+                                    <path d="M8 9.77778L10.5 12L15 8" stroke="white" stroke-width="1.4"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                Allow
+                            </a>
+                                                                                                                                        <a href="../../cabinet"
+                                   class="sidebar-item ">
+                                    <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 12.32C15.4719 12.32 18.2857 9.56244 18.2857 6.16C18.2857 2.75756 15.4719 0 12 0C8.52812 0 5.71429 2.75756 5.71429 6.16C5.71429 9.56244 8.52812 12.32 12 12.32ZM16.4 13.86H15.5799C14.4897 14.3509 13.2768 14.63 12 14.63C10.7232 14.63 9.51518 14.3509 8.42009 13.86H7.6C3.95625 13.86 1 16.7571 1 20.328V22.33C1 23.6053 2.0558 24.64 3.35714 24.64H20.6429C21.9442 24.64 23 23.6053 23 22.33V20.328C23 16.7571 20.0437 13.86 16.4 13.86Z"
+                                            fill="black"/>
+                                    </svg>
+                                    Cabinet
+                                </a>
+                                                                        </div>
+                </ul>
+                                                    <div class="auth-buttons auth-mobile-buttons">
+                        <a href="../../cabinet" class="auth-btn">
+                            <img class="auth-image" src="../../images/default-user-image.svg" alt="Image">
+                            Арнат
+                        </a>
+                        <a href="../../logout" class="auth-btn">
+                            <svg width="18" height="24" viewBox="0 0 18 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 12C18 12.3183 17.8815 12.6235 17.6705 12.8485C17.4595 13.0736 17.1734 13.2 16.875 13.2H8.33625L10.9237 15.948C11.0292 16.0596 11.1129 16.1923 11.17 16.3385C11.2271 16.4847 11.2565 16.6416 11.2565 16.8C11.2565 16.9584 11.2271 17.1153 11.17 17.2615C11.1129 17.4077 11.0292 17.5404 10.9237 17.652C10.8192 17.7645 10.6947 17.8537 10.5576 17.9147C10.4206 17.9756 10.2735 18.007 10.125 18.007C9.97649 18.007 9.82944 17.9756 9.69235 17.9147C9.55526 17.8537 9.43083 17.7645 9.32625 17.652L4.82625 12.852C4.72383 12.7379 4.64354 12.6033 4.59 12.456C4.47748 12.1638 4.47748 11.8362 4.59 11.544C4.64354 11.3967 4.72383 11.2621 4.82625 11.148L9.32625 6.348C9.43114 6.23611 9.55567 6.14736 9.69272 6.08681C9.82977 6.02626 9.97666 5.99509 10.125 5.99509C10.2733 5.99509 10.4202 6.02626 10.5573 6.08681C10.6943 6.14736 10.8189 6.23611 10.9237 6.348C11.0286 6.45989 11.1118 6.59271 11.1686 6.7389C11.2254 6.88509 11.2546 7.04177 11.2546 7.2C11.2546 7.35823 11.2254 7.51491 11.1686 7.6611C11.1118 7.80729 11.0286 7.94011 10.9237 8.052L8.33625 10.8H16.875C17.1734 10.8 17.4595 10.9264 17.6705 11.1515C17.8815 11.3765 18 11.6817 18 12ZM3.375 0H14.625C15.5201 0 16.3786 0.379285 17.0115 1.05442C17.6444 1.72955 18 2.64522 18 3.6V7.2C18 7.51826 17.8815 7.82348 17.6705 8.04853C17.4595 8.27357 17.1734 8.4 16.875 8.4C16.5766 8.4 16.2905 8.27357 16.0795 8.04853C15.8685 7.82348 15.75 7.51826 15.75 7.2V3.6C15.75 3.28174 15.6315 2.97652 15.4205 2.75147C15.2095 2.52643 14.9234 2.4 14.625 2.4H3.375C3.07663 2.4 2.79048 2.52643 2.5795 2.75147C2.36853 2.97652 2.25 3.28174 2.25 3.6V20.4C2.25 20.7183 2.36853 21.0235 2.5795 21.2485C2.79048 21.4736 3.07663 21.6 3.375 21.6H14.625C14.9234 21.6 15.2095 21.4736 15.4205 21.2485C15.6315 21.0235 15.75 20.7183 15.75 20.4V16.8C15.75 16.4817 15.8685 16.1765 16.0795 15.9515C16.2905 15.7264 16.5766 15.6 16.875 15.6C17.1734 15.6 17.4595 15.7264 17.6705 15.9515C17.8815 16.1765 18 16.4817 18 16.8V20.4C18 21.3548 17.6444 22.2705 17.0115 22.9456C16.3786 23.6207 15.5201 24 14.625 24H3.375C2.47989 24 1.62145 23.6207 0.988514 22.9456C0.355579 22.2705 0 21.3548 0 20.4V3.6C0 2.64522 0.355579 1.72955 0.988514 1.05442C1.62145 0.379285 2.47989 0 3.375 0Z"
+                                    fill="white"/>
+                            </svg>
+                            Шығу
+                        </a>
+                    </div>
+                            </div>
+        </nav>
+    </div>
+</header>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-hidden">
+                    <section class="sidebar">
+    <div class="sidebar-items">
+                                                <a href="../15.html" class="sidebar-item ">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.9375 4.125H11.6875L8.9375 1.375H2.0625C0.923828 1.375 0 2.29883 0 3.4375V18.5625C0 19.7012 0.923828 20.625 2.0625 20.625H19.9375C21.0762 20.625 22 19.7012 22 18.5625V6.1875C22 5.04883 21.0762 4.125 19.9375 4.125Z"
+                        fill="black"/>
+                    <path d="M7.99966 12.182H14.3636" stroke="white" stroke-width="1.4" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+                All course
+            
+            </a>
+                            <a href="../../questions" class="sidebar-item ">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.61232 2.83962C17.6165 -0.764545 26.5009 8.79535 21.6628 17.5042C19.4649 21.4594 14.0055 24.6448 7.64825 21.6323L3.22898 22.8948C2.54357 23.0907 1.90971 22.4594 2.10242 21.7735C2.36596 20.8329 2.99096 18.6151 3.35659 17.4131C0.615962 12.5235 2.46388 5.30004 8.6118 2.83962H8.61232ZM8.33107 10.5474C8.33107 10.9068 8.62273 11.1985 8.98211 11.1985H16.0154C16.1881 11.1985 16.3537 11.1299 16.4758 11.0078C16.5979 10.8857 16.6665 10.7201 16.6665 10.5474C16.6665 10.3748 16.5979 10.2092 16.4758 10.0871C16.3537 9.96498 16.1881 9.89639 16.0154 9.89639H8.98211C8.62273 9.89639 8.33107 10.1881 8.33107 10.5474ZM8.98419 13.7891C8.81152 13.7891 8.64593 13.8577 8.52384 13.9798C8.40174 14.1019 8.33315 14.2675 8.33315 14.4401C8.33315 14.6128 8.40174 14.7784 8.52384 14.9005C8.64593 15.0226 8.81152 15.0912 8.98419 15.0912H13.9321C14.1048 15.0912 14.2704 15.0226 14.3925 14.9005C14.5146 14.7784 14.5831 14.6128 14.5831 14.4401C14.5831 14.2675 14.5146 14.1019 14.3925 13.9798C14.2704 13.8577 14.1048 13.7891 13.9321 13.7891H8.98419Z"
+                        fill="black"/>
+                </svg>
+                Question
+            </a>
+                            <a href="../../contract" class="sidebar-item ">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.5005 3.07914C20.461 2.79549 20.2569 2.56216 19.981 2.48547L11.1388 0.0264587C11.0128 -0.00862628 10.8796 -0.00862628 10.7535 0.0264587L1.9113 2.48547C1.63542 2.56216 1.43133 2.79539 1.39184 3.07914C1.34055 3.44791 0.170572 12.1613 3.17149 16.4959C6.16886 20.8253 10.5906 21.9348 10.7774 21.98C10.8329 21.9934 10.8894 22 10.9462 22C11.0029 22 11.0595 21.9933 11.115 21.98C11.3018 21.9348 15.7236 20.8253 18.7208 16.4959C21.7218 12.1614 20.5518 3.44801 20.5005 3.07914Z"
+                        fill="black"/>
+                    <path d="M8 9.77778L10.5 12L15 8" stroke="white" stroke-width="1.4" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+                Allow
+            </a>
+                                                        <a href="../../cabinet" class="sidebar-item ">
+                    <svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 12.32C15.4719 12.32 18.2857 9.56244 18.2857 6.16C18.2857 2.75756 15.4719 0 12 0C8.52812 0 5.71429 2.75756 5.71429 6.16C5.71429 9.56244 8.52812 12.32 12 12.32ZM16.4 13.86H15.5799C14.4897 14.3509 13.2768 14.63 12 14.63C10.7232 14.63 9.51518 14.3509 8.42009 13.86H7.6C3.95625 13.86 1 16.7571 1 20.328V22.33C1 23.6053 2.0558 24.64 3.35714 24.64H20.6429C21.9442 24.64 23 23.6053 23 22.33V20.328C23 16.7571 20.0437 13.86 16.4 13.86Z"
+                            fill="black"/>
+                    </svg>
+                    Cabinet
+                </a>
+                        </div>
+</section>
+                </div>
+                <div class="col-lg-9 col-md-12 col-12">
+                        <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card lesson-card">
+                    <div class="card-body">
+                        <div class="content-title lesson-title">Simplifying exponents using fractions</div>
+                                                                                    <div class=" mb-2">
+                                    <div class="plyr__video-embed player_lesson">
+                                        <video width="560" height="315" autoplay controls src="../../video/1v.mp4"></video>
+                                    </div>
+                                </div>
+                                                    
+                        
+                                                    <div class="content-title lesson-title lesson-document-title">Video materials
+                            </div>
+                            <div class="buttons">
+                                                            </div>
+                                            </div>
+
+                                            <div class="card-body">
+                            <div class="content-title lesson-title">Pass test</div>
+                            <div class="buttons">
+                                <form method="GET"
+                                      action="../../course/15/lesson/246/test">
+                                    <input type="hidden" name="_token" value="YH0LVPDPUQcOLMffOmr3IRGDHZSuLxYyw9IpFj1S">                                  
+                                </form>
+
+                                                                    <form method="GET"
+                                          action="test/test1.html">
+                                        <input type="hidden" name="_token" value="YH0LVPDPUQcOLMffOmr3IRGDHZSuLxYyw9IpFj1S">                                        <button type="submit" class="btn btn-lesson mr-2 mb-2">TEST</button>
+                                    </form>
+                                                            </div>
+                        </div>
+                    
+                    					
+						                                                    					
+                    <div class="card-body">
+                        <div class="content-title lesson-title">Comment</div>
+                        <form
+                            action="../../course/15/lesson/246/comment"
+                            method="POST">
+                            <input type="hidden" name="_token" value="YH0LVPDPUQcOLMffOmr3IRGDHZSuLxYyw9IpFj1S">                            <textarea class="form-control resize-none" name="comment" cols="30" rows="5"
+                                      placeholder="Comment"></textarea>
+                                                        <div class="buttons">
+                                <p class="btn btn-lesson ml-auto mt-2">Submit</p>
+                            </div>
+                        </form>
+                    </div>
+
+                                            <div class="card-body">
+                            <div class="content-title lesson-title">Comments (2)</div>
+
+                            <div class="comments">
+                                                                    <div class="comment">
+                                        <div class="comment-header">
+                                            <img src="../../images/default-user-image.svg" alt="" class="comment-image">
+                                            <div class="comment-author">Helihel Akseli
+                                                <span>07.10.2023</span></div>
+                                        </div>
+                                        <div class="comment-text">this saved me and it’s sad how students have to ask YouTube for homework help because the education system just does not work.</div>
+                                    </div>
+                                                                    <div class="comment">
+                                        <div class="comment-header">
+                                            <img src="../../images/default-user-image.svg" alt="" class="comment-image">
+                                            <div class="comment-author">Alba Yudif
+                                                <span>18.02.2024</span></div>
+                                        </div>
+                                        <div class="comment-text">i’m literally crying right now. bc the way my teacher taught me negative exponents made absolutely no sense. but he explained it once and now i get it???</div>
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="content">
+        <div class="row">
+            <div class="col text-center mb-2">
+                <a href="../15.html" class="btn btn-default">Back</a>
+            </div>
+        </div>
+    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row d-flex align-items-center">
+                <div class="copyright mr-auto">3JUZ-academy</div>
+                <div class="social-links">
+                    <a class="social-link" href="#">
+                        <svg class="telegram" width="36" height="36" viewBox="0 0 36 36" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M29.9316 9.82092L26.3099 26.7929C26.0366 27.9907 25.3241 28.2889 24.3115 27.7245L18.7931 23.6839L16.1304 26.2286C15.8357 26.5214 15.5893 26.7663 15.0214 26.7663L15.4178 21.1817L25.6455 11.9983C26.0902 11.6044 25.5491 11.3861 24.9544 11.78L12.3104 19.6911L6.86706 17.9981C5.68303 17.6308 5.66159 16.8216 7.11351 16.2573L28.4047 8.10669C29.3905 7.73935 30.2531 8.32496 29.9316 9.82092V9.82092Z"
+                                fill="#C4C4C4"/>
+                        </svg>
+                    </a>
+                    <a class="social-link" href="#" target='_blank'>
+                        <svg class="instagram" width="36" height="36" viewBox="0 0 36 36" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.3767 6.00015H12.623C8.97108 6.00015 6 8.97137 6 12.6233V23.377C6 27.0291 8.97108 30.0002 12.623 30.0002H23.3767C27.0289 30.0002 30 27.0289 30 23.377V12.6233C30.0001 8.97137 27.0289 6.00015 23.3767 6.00015ZM27.8707 23.377C27.8707 25.8549 25.8548 27.8708 23.3769 27.8708H12.623C10.1452 27.8709 8.1294 25.8549 8.1294 23.377V12.6233C8.1294 10.1455 10.1452 8.12955 12.623 8.12955H23.3767C25.8546 8.12955 27.8706 10.1455 27.8706 12.6233L27.8707 23.377Z"
+                                fill="#C4C4C4"/>
+                            <path
+                                d="M18 11.143C14.2189 11.143 11.1429 14.2191 11.1429 18.0003C11.1429 21.7813 14.2189 24.8573 18 24.8573C21.7811 24.8573 24.8571 21.7813 24.8571 18.0003C24.8571 14.2191 21.7811 11.143 18 11.143ZM18 22.496C15.521 22.496 13.504 20.4792 13.504 18.0002C13.504 15.5209 15.5208 13.504 18 13.504C20.4792 13.504 22.496 15.5209 22.496 18.0002C22.496 20.4792 20.479 22.496 18 22.496Z"
+                                fill="#C4C4C4"/>
+                            <path
+                                d="M24.8571 9.42872C24.4068 9.42872 23.9643 9.61106 23.6462 9.93054C23.3266 10.2485 23.1429 10.6911 23.1429 11.143C23.1429 11.5936 23.3268 12.036 23.6462 12.3555C23.9642 12.6734 24.4068 12.8573 24.8571 12.8573C25.3091 12.8573 25.7501 12.6734 26.0696 12.3555C26.3891 12.036 26.5714 11.5934 26.5714 11.143C26.5714 10.6911 26.3891 10.2485 26.0696 9.93054C25.7517 9.61106 25.3091 9.42872 24.8571 9.42872Z"
+                                fill="#C4C4C4"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="userResetPasswordModal" tabindex="-1" role="dialog" aria-hidden="true"
+     class="modal fade">
+    <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="close modal-close" data-dismiss="modal" data-bs-dismiss="modal"
+                    aria-label="Close">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.93933 7.93933C8.52513 7.35356 9.47487 7.35356 10.0607 7.93933L18 15.8787L25.9393 7.93933C26.5251 7.35356 27.4749 7.35356 28.0606 7.93933C28.6464 8.52513 28.6464 9.47487 28.0606 10.0607L20.1213 18L28.0606 25.9393C28.6464 26.5251 28.6464 27.4749 28.0606 28.0606C27.4749 28.6464 26.5251 28.6464 25.9393 28.0606L18 20.1213L10.0607 28.0606C9.47487 28.6464 8.52513 28.6464 7.93933 28.0606C7.35356 27.4749 7.35356 26.5251 7.93933 25.9393L15.8787 18L7.93933 10.0607C7.35356 9.47487 7.35356 8.52513 7.93933 7.93933Z"
+                        fill="#ffffff"/>
+                </svg>
+            </button>
+            <div class="modal-header row d-flex justify-content-between border-0"></div>
+            <div class="modal-body p-0">
+                <fieldset style="display: block">
+                    <form id="userResetPasswordForm" method="POST"
+                          action="../../ajax/reset-password">
+                        <input type="hidden" name="_token" value="YH0LVPDPUQcOLMffOmr3IRGDHZSuLxYyw9IpFj1S">                        <div class="form-group">
+                            <label for="reset_password_email">E-mail:</label>
+                            <input name="reset_password_email" type="email" class="form-control"
+                                   id="reset_password_email"
+                                   aria-describedby="error-update-email" placeholder="example@example.com"
+                                   value="">
+                            <div id="error-reset_password-email" class="invalid-feedback"></div>
+                        </div>
+                        <button class="btn btn-auth">Жіберу</button>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Scripts -->
+<script src="../../js/jquery.min.js"></script>
+<script src="../../plugins/sweetalert2/sweetalert2.js?v=1"></script>
+<script src="../../js/bootstrap.bundle.min.js"></script>
+<script src="../../js/script.js?v=1.4"></script>
+    <script src="../../admin-assets/vendors/plyr/plyr.js?v=1"></script>
+    <script>
+        Array.from(document.querySelectorAll('.plyr__video-embed')).map(p => new Plyr(p));
+
+        // Array.from(document.querySelectorAll('.player_lesson')).map(p => new Plyr(p, {}));
+        function deleteInputFile(el, num) {
+            $('#input_file_' + num).val("")
+            let parent = $(el).closest('form')
+            parent.find('.input_file_' + num + ' span.text').text('Файл жүктеу ')
+            parent.find('.input_file_' + num).css('display', 'flex')
+            parent.find('.input_file_' + num + '_uploaded').css('display', 'none')
+            parent.find('.input_file_' + num + '_uploaded .text').text('')
+        }
+
+        function change_file_input(el, number) {
+            let file_n = ''
+
+            $(el).each(function () {
+                let fileName = $(this).val().split('/').pop().split('\\').pop();
+                file_n = fileName
+            })
+
+            let re = /(\.jpg|\.jpeg|\.png|\.doc|\.docx|\.pdf|\.txt|\.xls|\.xlsx)$/i;
+
+            let parent = $(el).closest('form')
+
+            if (!re.exec(file_n)) {
+                if (file_n) {
+                    parent.find('.input_file_' + number + ' span.text').text('Файл қате ').css('color', '#981323')
+                } else {
+                    parent.find('.input_file_' + number + ' span.text').text('Файл жүктеу ').css('color', '#EA474A')
+                    parent.find('.input_file_' + number).css('border-color', '#EA474A')
+                }
+            } else {
+                parent.find('.input_file_' + number).css('display', 'none')
+                parent.find('.input_file_' + number + '_uploaded').css('display', 'flex')
+                parent.find('.input_file_' + number + '_uploaded span.text').text(file_n)
+            }
+        }
+    </script>
+
+    <script src="../../admin-assets/vendors/plyr/plyr.polyfilled.js?v=1"></script>
+
+<script>
+    function activeTab(activeTab = 'login') {
+        if (activeTab === 'login') {
+            $('#tab02').removeClass('active')
+            $('#tab021').removeClass('show')
+            $('#tab01').addClass('active')
+            $('#tab011').addClass('show')
+        } else {
+            $('#tab01').removeClass('active')
+            $('#tab011').removeClass('show')
+            $('#tab02').addClass('active')
+            $('#tab021').addClass('show')
+        }
+    }
+
+    function openLogin() {
+        activeTab('login')
+        $('#myModal').modal('show')
+    }
+
+    function openRegister() {
+        activeTab('register')
+        $('#myModal').modal('show')
+    }
+    
+    function alertModal(text = "", timer = 1500) {
+        Swal.fire({
+            text: text ? text : "Сәтті аяқталды!",
+            padding: '2em',
+            icon: 'success',
+            showConfirmButton: false,
+            timer: timer
+        })
+    }
+
+    function alertWarningModal(text = "") {
+        Swal.fire({
+            text: text ? `${text}` : "Қате!",
+            padding: '2em',
+            icon: 'warning',
+            showConfirmButton: true,
+        })
+    }
+
+    
+    
+    </script>
+
+</body>
+</html>
